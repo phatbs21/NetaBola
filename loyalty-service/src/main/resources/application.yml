@@ -1,0 +1,14 @@
+﻿server:
+  port: 8085
+spring:
+  application:
+    name: loyalty-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/netabola_loyalty
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost

@@ -1,0 +1,12 @@
+﻿server:
+  port: 8083
+spring:
+  application:
+    name: cart-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/netabola_cart
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update

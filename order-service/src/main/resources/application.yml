@@ -1,0 +1,22 @@
+﻿server:
+  port: 8084
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/netabola_orders
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+order:
+  delay-minutes: 15
+stripe:
+  secret-key: sk_test_change_me
+  webhook-secret: whsec_change_me

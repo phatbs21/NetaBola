@@ -1,0 +1,4 @@
+﻿# Prevent common files in common module
+target/
+*.class
+*.jar

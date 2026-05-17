@@ -1,0 +1,16 @@
+﻿server:
+  port: 8081
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/netabola_auth
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret-key: change-me-in-production
+  expiration-ms: 3600000
+  refresh-expiration-ms: 604800000

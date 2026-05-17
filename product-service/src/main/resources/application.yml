@@ -1,0 +1,12 @@
+﻿server:
+  port: 8082
+spring:
+  application:
+    name: product-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/netabola_products
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
